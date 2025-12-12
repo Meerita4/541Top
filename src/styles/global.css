@@ -69,6 +69,33 @@ h3 {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Hero Carousel Styles */
+.hero-slide {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-dot {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-dot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.carousel-dot.active {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
 /* Section spacing */
 .section-padding {
   @apply py-16 md:py-24;
