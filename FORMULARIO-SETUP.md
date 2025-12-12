@@ -21,21 +21,52 @@
 - Reemplaza `YOUR_FORM_ID` con tu Form ID real
 - Ejemplo: `action="https://formspree.io/f/mxxyzabc"`
 
-### 5. Configurar notificaciones (opcional)
-En el panel de Formspree puedes:
-- Cambiar el email donde recibirás los mensajes
-- Personalizar mensajes de confirmación
-- Añadir validación anti-spam
-- Configurar webhooks
+### 5. Configurar notificaciones y evitar spam ⚠️ IMPORTANTE
+En el panel de Formspree (https://formspree.io/forms) DEBES configurar:
+
+**Para evitar que los emails lleguen a SPAM:**
+1. **Settings** → **Email Settings**:
+   - Verifica tu dominio de correo (si tienes dominio propio)
+   - Activa "Email Notifications" en el correo correcto
+   - Configura un "From Name" profesional: "541TOP Sailcoach"
+
+2. **Settings** → **Form Settings**:
+   - Activa "reCAPTCHA" o "hCaptcha" para validación adicional
+   - Configura "Allowed Domains" con tu dominio web
+   - Activa "Email Confirmation" para respuesta automática al usuario
+
+3. **Configurar tu servidor de correo (RECOMENDADO)**:
+   - Si usas Gmail/Outlook: Añade formspree@formspree.io a contactos
+   - Marca el primer email como "No es spam"
+   - Crea un filtro para que emails de Formspree vayan a bandeja de entrada:
+     * Gmail: Configuración → Filtros → Nuevo filtro
+     * De: formspree.io → Crear filtro → "Nunca enviar a spam"
+
+4. **SPF/DKIM (Avanzado - si tienes dominio propio)**:
+   - Contacta con tu proveedor de hosting
+   - Añade registros SPF que incluyan Formspree
+   - Ejemplo SPF: `v=spf1 include:formspree.io ~all`
 
 ## Características del formulario:
 
 ✅ Validación de campos requeridos
-✅ Protección anti-spam (honeypot)
+✅ Protección anti-spam (honeypot mejorado)
+✅ Campo de asunto para categorización
+✅ Asunto personalizado en emails
 ✅ Mensajes de éxito/error
 ✅ Animación de carga
 ✅ Responsive design
-✅ Los usuarios recibirán los emails en el correo configurado en Formspree
+✅ Metadata optimizada para evitar spam
+
+## ⚠️ IMPORTANTE: Evitar que emails lleguen a SPAM
+
+**Lee el archivo EVITAR-SPAM.md** para la guía completa sobre cómo configurar Formspree correctamente y evitar que los mensajes lleguen a spam.
+
+Resumen rápido:
+- Configura "From Name" en Formspree
+- Activa reCAPTCHA
+- Añade formspree.io a tus contactos
+- Crea filtro "Nunca enviar a spam" en Gmail/Outlook
 
 ## Alternativa: Web3Forms
 
