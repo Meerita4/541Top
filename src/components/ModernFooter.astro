@@ -8,13 +8,15 @@ const currentYear = new Date().getFullYear();
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Logo y descripción -->
         <div class="md:col-span-2">
-          <div class="flex items-center space-x-2 mb-4">
-            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-              <span class="text-white font-bold text-lg">541</span>
-            </div>
+          <div class="flex items-center gap-3 mb-4">
+            <img 
+              src="/logo.jpg" 
+              alt="541TOP Sailcoach Logo" 
+              class="h-12 w-12 sm:h-14 sm:w-14 object-cover rounded-lg shadow-md"
+            />
             <div>
-              <div class="text-xl font-bold">541TOP</div>
-              <div class="text-sm text-blue-400 font-medium">SAILCOACH</div>
+              <div class="text-xl sm:text-2xl font-bold">541TOP</div>
+              <div class="text-sm sm:text-base text-blue-400 font-medium">SAILCOACH</div>
             </div>
           </div>
           <p class="text-gray-300 mb-4 max-w-md">
@@ -81,7 +83,13 @@ const currentYear = new Date().getFullYear();
 
       <div class="border-t border-gray-800 mt-8 pt-8 text-center">
         <p class="text-gray-400">
-          &copy; {currentYear} 541TOP Sailcoach. Todos los derechos reservados.
+          &copy; {currentYear} 541TOP Sailcoach. 
+          <a 
+            href="/derechos" 
+            class="text-blue-400 hover:text-blue-300 transition-colors underline ml-1"
+          >
+            Todos los derechos reservados
+          </a>
         </p>
       </div>
     </div>
