@@ -120,63 +120,106 @@ import { Image } from 'astro:assets';
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          <!-- Evento 1 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <!-- Evento 1: Euromarina Torrevieja -->
+          <a href="/eventos/euromarina-torrevieja" class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div class="bg-blue-600 text-white p-4 text-center">
               <p class="text-sm font-medium uppercase tracking-wide">Enero 2026</p>
-              <p class="text-3xl font-bold">25-26</p>
+              <p class="text-3xl font-bold">29-1</p>
             </div>
             <div class="p-6">
-              <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Clínica</span>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Clínica Optimist Chipiona</h3>
-              <p class="text-gray-600 mb-4">Entrenamiento técnico intensivo de fin de semana para regatistas de nivel intermedio y avanzado.</p>
-              <div class="flex items-center text-sm text-gray-500">
+              <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Excellence Cup</span>
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">XVIII Trofeo Euromarina Optimist</h3>
+              <p class="text-gray-600 mb-4">Regata internacional con más de 400 participantes. Primera prueba de la Excellence Cup.</p>
+              <div class="flex items-center text-sm text-gray-500 mb-4">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 </svg>
-                Chipiona, España
+                Torrevieja, España
+              </div>
+              <div class="flex items-center justify-between text-blue-600 font-medium">
+                <span>Ver detalles</span>
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
               </div>
             </div>
-          </div>
+          </a>
 
-          <!-- Evento 2 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <div class="bg-blue-600 text-white p-4 text-center">
+          <!-- Evento 2: Palamós Optimist Trophy -->
+          <a href="/eventos/palamos-optimist-trophy" class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="bg-cyan-600 text-white p-4 text-center">
               <p class="text-sm font-medium uppercase tracking-wide">Febrero 2026</p>
-              <p class="text-3xl font-bold">14-16</p>
+              <p class="text-3xl font-bold">11-15</p>
             </div>
             <div class="p-6">
-              <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Regata</span>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Trofeo Carnaval</h3>
-              <p class="text-gray-600 mb-4">Asistencia completa a la regata con entrenador, barco de apoyo y logística incluida.</p>
-              <div class="flex items-center text-sm text-gray-500">
+              <span class="inline-block bg-cyan-100 text-cyan-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">20 Nations Cup</span>
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-cyan-600 transition-colors">36 Vila de Palamós Trophy</h3>
+              <p class="text-gray-600 mb-4">Regata de referencia internacional con más de 300 participantes de 20 países.</p>
+              <div class="flex items-center text-sm text-gray-500 mb-4">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 </svg>
-                Cádiz, España
+                Palamós, España
+              </div>
+              <div class="flex items-center justify-between text-cyan-600 font-medium">
+                <span>Ver detalles</span>
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
               </div>
             </div>
-          </div>
+          </a>
 
-          <!-- Evento 3 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <div class="bg-blue-600 text-white p-4 text-center">
-              <p class="text-sm font-medium uppercase tracking-wide">Marzo 2026</p>
-              <p class="text-3xl font-bold">21-28</p>
+          <!-- Evento 3: Opti Orange Valencia -->
+          <a href="/eventos/opti-orange-valencia" class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="bg-blue-500 text-white p-4 text-center">
+              <p class="text-sm font-medium uppercase tracking-wide">Febrero 2026</p>
+              <p class="text-3xl font-bold">19-22</p>
             </div>
             <div class="p-6">
-              <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Training Camp</span>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Campus Semana Santa</h3>
-              <p class="text-gray-600 mb-4">Programa intensivo de entrenamiento durante las vacaciones de Semana Santa.</p>
-              <div class="flex items-center text-sm text-gray-500">
+              <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Excellence Cup</span>
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">Opti Orange Valencia</h3>
+              <p class="text-gray-600 mb-4">Regata internacional en el Real Club Náutico de Valencia con participación internacional.</p>
+              <div class="flex items-center text-sm text-gray-500 mb-4">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 </svg>
-                Chipiona, España
+                Valencia, España
+              </div>
+              <div class="flex items-center justify-between text-blue-500 font-medium">
+                <span>Ver detalles</span>
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
               </div>
             </div>
-          </div>
+          </a>
+
+          <!-- Evento 4: Lake Garda Meeting -->
+          <a href="/eventos/lake-garda-meeting" class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="bg-blue-800 text-white p-4 text-center">
+              <p class="text-sm font-medium uppercase tracking-wide">Abril 2026</p>
+              <p class="text-3xl font-bold">2-5</p>
+            </div>
+            <div class="p-6">
+              <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Internacional</span>
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition-colors">44° Lake Garda Meeting</h3>
+              <p class="text-gray-600 mb-4">La regata de Optimist más grande del mundo en el Lago di Garda, Italia.</p>
+              <div class="flex items-center text-sm text-gray-500 mb-4">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                </svg>
+                Riva del Garda, Italia
+              </div>
+              <div class="flex items-center justify-between text-blue-800 font-medium">
+                <span>Ver detalles</span>
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -462,11 +505,11 @@ import { Image } from 'astro:assets';
             </p>
           </div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
+          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
             <!-- Regatista 1 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="h-32 sm:h-40 md:h-48 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 relative overflow-hidden">
-                <img src="src/images/JorgeBenitez.jpeg" alt="Jorge Benítez Casares" class="absolute inset-0 w-full h-full object-cover object-center">
+              <div class="h-32 sm:h-40 md:h-48 bg-gray-100 relative overflow-hidden flex items-center justify-center">
+                <img src="src/images/JorgeBenitez.jpeg" alt="Jorge Benítez Casares" class="w-full h-full object-contain">
               </div>
               <div class="p-3 sm:p-4 text-center">
                 <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-1">Jorge Benítez Casares</h4>
@@ -523,6 +566,18 @@ import { Image } from 'astro:assets';
                 <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-1">Alexandra Wang </h4>
                 <p class="text-xs sm:text-sm text-orange-600 font-semibold mb-2">CN Jávea <br> ESP 3572</p>
                 <p class="text-xs text-gray-600">Campeona España sub13 2025</p>
+              </div>
+            </div>
+
+            <!-- Regatista 6 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="h-32 sm:h-40 md:h-48 bg-gray-100 relative overflow-hidden flex items-center justify-center">
+                <img src="src/images/saraPacheco.jpeg" alt="Sara Pacheco" class="w-full h-full object-contain"> 
+              </div>
+              <div class="p-3 sm:p-4 text-center">
+                <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-1">Sara Pacheco</h4>
+                <p class="text-xs sm:text-sm text-pink-600 font-semibold mb-2">SC Porto <br> POR 2822</p>
+                <p class="text-xs text-gray-600">Vice campeona Sub 13 femenino 2024 y 2025</p>
               </div>
             </div>
           </div>
