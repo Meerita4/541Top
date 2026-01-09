@@ -1,10 +1,12 @@
 ---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
 const navItems = [
-  { name: 'Inicio', href: '#hero' },
-  { name: 'Próximos Eventos', href: '#eventos' },
-  { name: 'Servicios', href: '#servicios' },
-  { name: 'Equipo', href: '#equipo' },
-  { name: 'Contacto', href: '#contacto' }
+  { name: 'Inicio', href: '#hero', key: 'home' },
+  { name: 'Próximos Eventos', href: '#eventos', key: 'events' },
+  { name: 'Servicios', href: '#servicios', key: 'services' },
+  { name: 'Equipo', href: '#equipo', key: 'team' },
+  { name: 'Contacto', href: '#contacto', key: 'contact' }
 ];
 ---
 
@@ -28,14 +30,16 @@ const navItems = [
           <a 
             href={item.href} 
             class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+            data-i18n={`nav.${item.key}`}
           >
             {item.name}
           </a>
         ))}
       </div>
 
-      <!-- CTA Button Desktop -->
+      <!-- CTA Button & Language Desktop -->
       <div class="hidden md:flex items-center space-x-4">
+        <LanguageSwitcher />
         <a 
           href="https://api.whatsapp.com/send?phone=34616011752&text=Hola%20quiero%20m%C3%A1s%20informacion"
           target="_blank"
@@ -49,7 +53,8 @@ const navItems = [
       </div>
 
       <!-- Mobile menu button -->
-      <div class="md:hidden">
+      <div class="md:hidden flex items-center space-x-2">
+        <LanguageSwitcher />
         <button 
           id="mobile-menu-button" 
           type="button" 
@@ -70,6 +75,7 @@ const navItems = [
           <a 
             href={item.href} 
             class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium"
+            data-i18n={`nav.${item.key}`}
           >
             {item.name}
           </a>

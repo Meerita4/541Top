@@ -11,20 +11,20 @@ import Layout from '../../layouts/Layout.astro';
           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
           </svg>
-          Volver a eventos
+          <span data-i18n="eventPage.backToEvents">Volver a eventos</span>
         </a>
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <span class="inline-block bg-blue-500 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Regata Internacional</span>
+            <span class="inline-block bg-blue-500 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4" data-i18n="eventPage.internationalRegatta">Regata Internacional</span>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">XVIII Trofeo Euromarina Optimist Torrevieja</h1>
-            <p class="text-xl text-blue-100 max-w-2xl">
+            <p class="text-xl text-blue-100 max-w-2xl" data-i18n="events.event1.description">
               Una de las regatas internacionales más prestigiosas del calendario europeo de vela infantil clase Optimist.
             </p>
           </div>
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center min-w-[200px]">
-            <p class="text-blue-200 text-sm font-medium uppercase tracking-wide">Enero - Febrero 2026</p>
+            <p class="text-blue-200 text-sm font-medium uppercase tracking-wide" data-i18n="events.event1.month">Enero - Febrero 2026</p>
             <p class="text-5xl font-bold my-2">29-1</p>
-            <p class="text-blue-200">Jueves - Domingo</p>
+            <p class="text-blue-200" data-i18n="eventPage.thurSun">Jueves - Domingo</p>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@ import Layout from '../../layouts/Layout.astro';
           <!-- Información detallada -->
           <div class="lg:col-span-2 space-y-8">
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Sobre la regata</h2>
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4" data-i18n="eventPage.aboutRegatta">Sobre la regata</h2>
               <div class="prose prose-lg text-gray-600 space-y-4">
                 <p>
                   La XVIII edición del Trofeo Euromarina Optimist Torrevieja llega a su mayoría de edad, consolidándose
@@ -54,7 +54,7 @@ import Layout from '../../layouts/Layout.astro';
             </div>
 
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Programa de la regata</h2>
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4" data-i18n="eventPage.schedule">Programa de la regata</h2>
               <div class="space-y-4">
                 <div class="bg-gray-50 rounded-lg p-5 border-l-4 border-blue-500">
                   <div class="flex items-center justify-between mb-2">
@@ -101,7 +101,7 @@ import Layout from '../../layouts/Layout.astro';
             </div>
 
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">¿Qué incluye nuestra asistencia?</h2>
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4" data-i18n="eventPage.whatIncludes">¿Qué incluye nuestra asistencia?</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="bg-gray-50 rounded-lg p-5">
                   <div class="flex items-center mb-3">
@@ -110,9 +110,9 @@ import Layout from '../../layouts/Layout.astro';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                       </svg>
                     </div>
-                    <h3 class="font-bold text-gray-900">Entrenador dedicado</h3>
+                    <h3 class="font-bold text-gray-900" data-i18n="eventPage.dedicatedCoach">Entrenador dedicado</h3>
                   </div>
-                  <p class="text-gray-600 text-sm">Seguimiento personalizado durante toda la competición.</p>
+                  <p class="text-gray-600 text-sm" data-i18n="eventPage.dedicatedCoachDesc">Seguimiento personalizado durante toda la competición.</p>
                 </div>
                 <div class="bg-gray-50 rounded-lg p-5">
                   <div class="flex items-center mb-3">
@@ -121,9 +121,9 @@ import Layout from '../../layouts/Layout.astro';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                       </svg>
                     </div>
-                    <h3 class="font-bold text-gray-900">Barco de apoyo</h3>
+                    <h3 class="font-bold text-gray-900" data-i18n="eventPage.supportBoat">Barco de apoyo</h3>
                   </div>
-                  <p class="text-gray-600 text-sm">RIB de apoyo para seguimiento en el agua y asistencia.</p>
+                  <p class="text-gray-600 text-sm" data-i18n="eventPage.supportBoatDesc">RIB de apoyo para seguimiento en el agua y asistencia.</p>
                 </div>
                 <div class="bg-gray-50 rounded-lg p-5">
                   <div class="flex items-center mb-3">
@@ -132,9 +132,9 @@ import Layout from '../../layouts/Layout.astro';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
                       </svg>
                     </div>
-                    <h3 class="font-bold text-gray-900">Gestión logística</h3>
+                    <h3 class="font-bold text-gray-900" data-i18n="eventPage.logistics">Gestión logística</h3>
                   </div>
-                  <p class="text-gray-600 text-sm">Inscripción, mediciones y toda la gestión administrativa.</p>
+                  <p class="text-gray-600 text-sm" data-i18n="eventPage.logisticsDesc">Inscripción, mediciones y toda la gestión administrativa.</p>
                 </div>
                 <div class="bg-gray-50 rounded-lg p-5">
                   <div class="flex items-center mb-3">
@@ -143,9 +143,9 @@ import Layout from '../../layouts/Layout.astro';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
                       </svg>
                     </div>
-                    <h3 class="font-bold text-gray-900">Análisis post-regata</h3>
+                    <h3 class="font-bold text-gray-900" data-i18n="eventPage.postRaceAnalysis">Análisis post-regata</h3>
                   </div>
-                  <p class="text-gray-600 text-sm">Briefing diario y análisis de cada jornada de competición.</p>
+                  <p class="text-gray-600 text-sm" data-i18n="eventPage.postRaceAnalysisDesc">Briefing diario y análisis de cada jornada de competición.</p>
                 </div>
               </div>
             </div>
@@ -154,14 +154,14 @@ import Layout from '../../layouts/Layout.astro';
           <!-- Sidebar -->
           <div class="space-y-6">
             <div class="bg-white rounded-xl shadow-lg p-6 sticky top-24">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">Información del evento</h3>
+              <h3 class="text-xl font-bold text-gray-900 mb-4" data-i18n="eventPage.eventInfo">Información del evento</h3>
               <div class="space-y-4">
                 <div class="flex items-start">
                   <svg class="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                   </svg>
                   <div>
-                    <p class="text-sm text-gray-500">Fechas</p>
+                    <p class="text-sm text-gray-500" data-i18n="eventPage.dates">Fechas</p>
                     <p class="font-semibold text-gray-900">29 Enero - 1 Febrero 2026</p>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ import Layout from '../../layouts/Layout.astro';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                   </svg>
                   <div>
-                    <p class="text-sm text-gray-500">Ubicación</p>
+                    <p class="text-sm text-gray-500" data-i18n="eventPage.location">Ubicación</p>
                     <p class="font-semibold text-gray-900">Real Club Náutico de Torrevieja</p>
                     <p class="text-sm text-gray-600">Torrevieja, Alicante, España</p>
                   </div>
@@ -181,7 +181,7 @@ import Layout from '../../layouts/Layout.astro';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                   </svg>
                   <div>
-                    <p class="text-sm text-gray-500">Organizador</p>
+                    <p class="text-sm text-gray-500" data-i18n="eventPage.organizer">Organizador</p>
                     <p class="font-semibold text-gray-900">RCNT</p>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ import Layout from '../../layouts/Layout.astro';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                   </svg>
                   <div>
-                    <p class="text-sm text-gray-500">Circuito</p>
+                    <p class="text-sm text-gray-500" data-i18n="eventPage.circuit">Circuito</p>
                     <p class="font-semibold text-gray-900">Excellence Cup</p>
                   </div>
                 </div>
@@ -199,9 +199,9 @@ import Layout from '../../layouts/Layout.astro';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                   </svg>
                   <div>
-                    <p class="text-sm text-gray-500">Participantes</p>
-                    <p class="font-semibold text-gray-900">+400 regatistas</p>
-                    <p class="text-sm text-gray-600">De más de 25 países</p>
+                    <p class="text-sm text-gray-500" data-i18n="eventPage.participants">Participantes</p>
+                    <p class="font-semibold text-gray-900" data-i18n="eventPage.sailorsCount400">+400 regatistas</p>
+                    <p class="text-sm text-gray-600" data-i18n="eventPage.fromCountries25">De más de 25 países</p>
                   </div>
                 </div>
               </div>
@@ -215,7 +215,7 @@ import Layout from '../../layouts/Layout.astro';
                   <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                   </svg>
-                  Reservar plaza
+                  <span data-i18n="eventPage.reserve">Reservar plaza</span>
                 </a>
               </div>
 
@@ -228,7 +228,7 @@ import Layout from '../../layouts/Layout.astro';
                   <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                   </svg>
-                  Web oficial
+                  <span data-i18n="eventPage.officialWeb">Web oficial</span>
                 </a>
               </div>
             </div>
