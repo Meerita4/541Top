@@ -113,6 +113,21 @@ img {
 	border-radius: 8px;
 }
 
+/* Hero carousel images - override legacy styles */
+.hero-slide img,
+.hero-slide picture,
+.hero-slide picture img {
+	max-width: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 code {
 	padding: 2px 5px;
 	background-color: #f3f4f6;

@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+
+// Importar imágenes del carrusel
+import carrusel1 from '../images/carrusel1.jpeg';
+import carrusel2 from '../images/carrusel2.jpeg';
+import carrusel3 from '../images/carrusel3.jpeg';
+import carrusel4 from '../images/carrusel4.jpeg';
 ---
 
 <Layout title="541TOP Sailcoach - Entrenamiento de Vela Profesional">
@@ -11,38 +17,54 @@ import { Image } from 'astro:assets';
       <div class="absolute inset-0 z-0">
         <!-- Slide 1 - Optimist sailing -->
         <div class="hero-slide active absolute inset-0">
-          <img 
-            src="/src/images/foto1.jpg" 
+          <Image 
+            src={carrusel1} 
             alt="Entrenamiento de vela Optimist" 
-            class="w-full h-full object-cover"
-          >
+            class="w-full h-full object-cover object-center"
+            widths={[1920, 2560]}
+            sizes="100vw"
+            loading="eager"
+            quality={90}
+          />
           <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/60 to-transparent"></div>
         </div>
         <!-- Slide 2 - ILCA sailing -->
         <div class="hero-slide absolute inset-0">
-          <img 
-            src="/src/images/foto2.jpg" 
+          <Image 
+            src={carrusel2} 
             alt="Entrenamiento ILCA" 
-            class="w-full h-full object-cover"
-          >
+            class="w-full h-full object-cover object-center"
+            widths={[1920, 2560]}
+            sizes="100vw"
+            loading="lazy"
+            quality={90}
+          />
           <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/60 to-transparent"></div>
         </div>
         <!-- Slide 3 - Team training -->
         <div class="hero-slide absolute inset-0">
-          <img 
-            src="/src/images/foto3.jpg"  
+          <Image 
+            src={carrusel3}  
             alt="Entrenamiento en equipo" 
-            class="w-full h-full object-cover"
-          >
+            class="w-full h-full object-cover object-center"
+            widths={[1920, 2560]}
+            sizes="100vw"
+            loading="lazy"
+            quality={90}
+          />
           <div class="absolute inset-0 bg-gradient-to-r from-cyan-900/80 via-blue-800/60 to-transparent"></div>
         </div>
         <!-- Slide 4 - Regatta -->
         <div class="hero-slide absolute inset-0">
-          <img 
-            src="/src/images/foto4.jpg" 
+          <Image 
+            src={carrusel4} 
             alt="Regatas y competición" 
-            class="w-full h-full object-cover"
-          >
+            class="w-full h-full object-cover object-center"
+            widths={[1920, 2560]}
+            sizes="100vw"
+            loading="lazy"
+            quality={90}
+          />
           <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/80 via-blue-800/60 to-transparent"></div>
         </div>
       </div>
@@ -468,7 +490,7 @@ import { Image } from 'astro:assets';
               />
             </div>
             <div class="p-4 sm:p-6 md:p-8">
-              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Gonzalo Lago</h3>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Guillermo Flores</h3>
               <p class="text-emerald-600 font-semibold mb-4 sm:mb-6 text-base sm:text-lg" data-i18n="team.gonzalo.role">Entrenador Nacional de Vela</p>
               <div class="space-y-2 sm:space-y-3 text-gray-600 mb-4 sm:mb-6">
                 <div class="flex items-center">
